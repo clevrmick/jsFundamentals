@@ -12,10 +12,15 @@ const person = {
     }
 }
 
+
 let val;
 val = person;
 // get specific value
 val = person.firstName;
+val = person.age;
+val = person.hobbies[1];
+val = person.address.state;
+val = person.getBirthYear();
 
 
 console.log(val)
