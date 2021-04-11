@@ -48,3 +48,10 @@ const result = calC.squaRoot(9);
 const check = calC.add(8);
 console.log(check)
 console.log(result);
+
+function rollDice(){
+    let roll = Math.floor(Math.random() * 20 + 1);
+    console.log(`Rolled: ${roll}`);
+}
+
+rollDice();
