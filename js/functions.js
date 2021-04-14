@@ -55,3 +55,42 @@ function rollDice(){
 }
 
 rollDice();
+// One important note about function statement is that they end function excution
+function add(x) {
+    return x + x;
+}
+
+function isPurple(color) {
+    if(color.toLowerCase() === 'purple') {
+        return 'Thank you. Your color match is purple'
+    }
+    return `Try Again ${color} is not a good color for the event`
+}
+
+console.log(isPurple('purplE'))
+
+function isGreen(color){
+    return color.toLowerCase === 'green';
+}
+
+function containsGgreen(arr){
+    for(let color of arr){
+        if(color === 'purple' || color === 'mangenta'){
+            return true
+        }
+    }
+    return false
+}
+
+console.log(containsGgreen(['green', 'pink', 'blue', 'mangenta']));
+
+function isValidPassword(pss, userName){
+    if(pss.length < 8 && pss.contain(!userName)){
+        message = 'Sorry password must be at least 8 Character Long';
+    } else {
+        message = 'Password is strong'
+    }
+    return message
+}
+
+console.log(isValidPassword())
