@@ -193,3 +193,4 @@ let status = 'online';
 
 let colorStatus = status === 'offline' ? 'red' : 'green';
 console.log(colorStatus);
+
