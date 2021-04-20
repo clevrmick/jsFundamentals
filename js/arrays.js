@@ -63,7 +63,7 @@ console.log(fruits.concat(veggies)); // it create a new array and does not alter
 
 // includes: is known as a boolean value it returns true or false. it tells you if an array icludes a certain value or not
 
-let incredents = [
+let ingredents = [
     'Water',
     'Corn starch',
     'flour',
@@ -74,13 +74,41 @@ let incredents = [
     'butter'
 ];
 
-console.log(incredents.includes('Cheese'));
+console.log(ingredents.includes('Cheese'));
 
 
-if (incredents.includes('butter')) {
+if (ingredents.includes('butter')) {
     console.log('Sorry i can\'t eat that. Too much calories');
 }
 
+// indexOf(): act as that of a strings gives you the positon on your index
+console.log(ingredents.indexOf('eel'));
+// reverse(): does exactly as the name sounds it reverses an array inplace: meaning it does not make a copy it mutate
+// or change the orignal array
+
+let letters = ['T', 'C', 'E', 'P', 'S', 'E', 'R'];
+
+let alphabet = letters.reverse();
+// console.log(alphabet, letters);
+// join (): Creat and returns a new string by concatinating all of the elements in an array seperated by a comma,
+//  or a specified seperator string
+
+letters.join();// default will join them with a seperated comma.
+console.log(letters)
+
+// nested array is all about putting an array inside an array
+
+const color = [
+    ['crimson', 'blue'],
+    ['Orange', 'Dark Organge'],
+    ['Green', 'Olive']
+]
+
+console.log(color[1] [0]);
+color[2][1] = 'Maroon';
+let newColor = color[0][1] = 'Red';
+console.log(newColor)
+console.log(color)
 
 
 
