@@ -100,3 +100,5 @@ const shoppingCart = [
 ];
 
 console.log(shoppingCart)
+
+// javascript always store a reference to where that array or object is. object is a reference type 
