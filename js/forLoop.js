@@ -77,3 +77,18 @@ for (let j = 0; j < myStudentResult.length; j++) {
     total += studentGrad.grade;
 }
 console.log(total/myStudentResult.length);
+
+// for of is a cleaner way to itterate through an iterables prefarably arrays
+
+const cars = [
+    ['Lambo', 'Benz', 'Toyota'],
+    ['Honda', 'Kia', 'Varis'],
+    ['Chavolet', 'Ford', 'Monstang'],
+    ['Lambo', 'Benz', 'Toyota']
+];
+
+// console.log(cars)
+
+for (car of cars) {
+    console.log(car);
+}
