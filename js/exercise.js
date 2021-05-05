@@ -75,11 +75,11 @@
 
 //  example of forLpop
 
-}
-let userInput = prompt('Please enter your date of birth');
-let currentYr = 2021;
-let userAge = Number((currentYr - userInput));
-console.log(userAge);
+
+// let userInput = prompt('Please enter your date of birth');
+// let currentYr = 2021;
+// let userAge = Number((currentYr - userInput));
+// console.log(userAge);
 
 // while (true) {
 //    prompt('Please enter your date of birth');
@@ -87,3 +87,36 @@ console.log(userAge);
 //     console.log('sorry your too young for this')
 //    }
 // }
+
+const myStudent = [
+    {
+        firstName: 'Zeus',
+        grade    : 86
+    },
+    {
+        firstName: 'Artemis',
+        grade    : 97
+    },
+    {
+        firstName: 'Hera',
+        grade    : 72
+    },
+    {
+        firstName: 'Apolo',
+        grade    : 90
+    },
+];
+
+
+let total = 0;
+
+for (let i = 0; i < myStudent.length; i++) {
+    let student = myStudent[i];
+    console.log(student)
+}
+
+let sum = 0;
+
+for (let student of myStudent) {
+    console.log(`${student.firstName} scored ${student.grade}`)
+}
