@@ -88,35 +88,97 @@
 //    }
 // }
 
-const myStudent = [
-    {
-        firstName: 'Zeus',
-        grade    : 86
-    },
-    {
-        firstName: 'Artemis',
-        grade    : 97
-    },
-    {
-        firstName: 'Hera',
-        grade    : 72
-    },
-    {
-        firstName: 'Apolo',
-        grade    : 90
-    },
-];
+// const myStudent = [
+//     {
+//         firstName: 'Zeus',
+//         grade    : 86
+//     },
+//     {
+//         firstName: 'Artemis',
+//         grade    : 97
+//     },
+//     {
+//         firstName: 'Hera',
+//         grade    : 72
+//     },
+//     {
+//         firstName: 'Apolo',
+//         grade    : 90
+//     },
+// ];
 
 
-let total = 0;
+// let total = 0;
 
-for (let i = 0; i < myStudent.length; i++) {
-    let student = myStudent[i];
-    console.log(student)
+
+
+// for (let i = 0; i < myStudent.length; i++) {
+//     let student = myStudent[i];
+//     console.log(student)
+// }
+
+// let sum = 0;
+
+// for (let student of myStudent) {
+//     console.log(`${student.firstName} scored ${student.grade}`)
+// }
+
+
+
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+// const subtract = function(x, y) {
+//     return x - y;
+// }
+
+// function multiply(x, y) {
+//     return x * y;
+// }
+
+// const divide = function(x, y) {
+//     return x /y
+// }
+
+
+// const operation = [add, subtract, multiply, divide];
+
+// console.log(operation[0](4, 9));
+
+
+// for (let func of operation) {
+//    console.log(func(8, 9));
+// }
+
+// const calc = {
+//     addition: add
+// }
+
+// calc.addition(6, 8)
+
+
+function multiply(num) {
+   return function(x) {
+        return x * num;
+    }
 }
 
-let sum = 0;
 
-for (let student of myStudent) {
-    console.log(`${student.firstName} scored ${student.grade}`)
+const triple = multiply(4);
+// console.log(tripple(5));
+
+function makeBetweenFunc(x, y) {
+    return function(numb) {
+        return (numb >= x && numb <= y);
+    }
 }
+
+const isChild = makeBetweenFunc(0, 20);
+
+console.log(isChild(78));
+
+const isNiceWeather = makeBetweenFunc(60, 80);
+console.log(isNiceWeather(100));
+
