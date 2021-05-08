@@ -82,3 +82,20 @@ console.log(isEven(99));
 const multiply = (x , y) => x * y;
 
 console.log(multiply(98, 3));
+
+// Applying arrow function to map
+
+const randomNumber = numbers.map((number) => {
+    return number * 5;
+});
+
+console.log(randomNumber);
+
+//  to map odd and even number from the array numbers using arrow function in map
+
+const isEvenorOdd = numbers.map((number) => {
+    return number % 2 == 0 ? `${number} even` : `${number} odd`;
+});
+console.log(isEvenorOdd);
+
+

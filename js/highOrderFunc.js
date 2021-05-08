@@ -71,3 +71,4 @@ picOne(happy, laugh);
  * previously we talked about one type of high order function, function that accept function as an 
  * argument. now lets talk about returning a functions from withing a function
  */
+
