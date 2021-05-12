@@ -54,10 +54,7 @@ const books = [
 
 ]
 
-const bestBook = books.find((book) => {
-    if (book.rating > 4.3) {
-        return book.authors;
-    }
-})
+const bestBook = books.find((book) => book.rating > 4.3);
+const neilBook = books.find((book) => book.includes('Neil Gaiman'));
 
 console.log(bestBook);
