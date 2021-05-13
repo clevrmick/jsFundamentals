@@ -17,12 +17,3 @@ const ascSort = prices.sort((a, b) => a - b);
 
 console.log(ascSort);
 
-/**
- * We can also use the reduce function to find the maximum value in an array
- * Where the accumulator is really just tracking the max
- */
-
-const grades = [87, 64, 96, 92, 88, 99, 73, 70, 64];
-const maxGrade = grades.reduce((max, currtVal) => currtVal > max ? currtVal: max) // check if the current value is greater than the current max
-
-console.log(maxGrade)
