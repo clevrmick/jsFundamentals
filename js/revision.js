@@ -1,19 +1,12 @@
-const h5 = document.getElementById('task-title');
-console.log(h5)
+function giveMeFour(a, b, c, d) {
+    console.log('a :', a)
+    console.log('b :', b)
+    console.log('c :', c)
+    console.log('d :', d)
+}
 
-console.log(h5.id);
-console.log(h5.className)
-h5.id = 'testing mode'
 
-h5.style.color = 'red';
-h5.style.background = '#333';
-h5.style.padding = '10px';
-h5.style.textAlign 
+const fruits = ['orange', 'banna', 'waterMellon', 'betroot'];
 
-h5.innerText = 'Welcome';
-h5.textContent = 'Funnky';
-
-const taskTitle = document.querySelector('.collection-item');
-
-console.log(taskTitle)
+giveMeFour(...fruits);
 

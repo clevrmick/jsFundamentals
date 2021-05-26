@@ -1,6 +1,6 @@
 /**
- * we have spread in a function call, spread in array literal, spread in object
- * Spread Ddoes many thing depending on the contex. the spread synthax allows an iterable such as an 
+ * we have spread in a function call, spread in array, spread in object
+ * Spread Does many thing depending on the contex. the spread synthax allows an iterable such as an 
  * array to be expanded in place where zero or more key value pairs are expected. 
  * spread are always three dot(..) which means or behave somewhat different.
  * depending on the place there are used 
@@ -18,6 +18,8 @@
             console.log('c :', c);
             console.log('d:', d);
         }
+
+        
 
         giveMeFour(...numbers); //use the 3 dots is spread across the argument
         // strings are iterable and can be spread but not on all cases
